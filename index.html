@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Kristy Kwon's links</title>
 
     <style>
       * {
-        border: 1px pink dashed;
+        border: 1px white dashed;
       }
       
       html {
@@ -19,12 +21,14 @@
         min-height: 100%;
         padding-top: 40px;
         padding-bottom: 40px;
-        background: linear-gradient(135deg, #ffe5ce, #ffd0ba, #ffb9b0, #ffa2b0, #fd8dba, #ec7cca, #cd72de, #9c71f2);
+        background: radial-gradient(circle at 100% 0%, #a0d9f2, #8dded2, #9ddda7, #c0d57f, #e3c978, #fcbb9e, #ffb0d2, #f7b0ff); 
         color: rgba(255, 255, 255, 1.0);
+        font-family: "Helvetica";
       }
 
       a {
         color: rgba(255, 255, 255, 1.0);
+        text-decoration: none;
       }
 
       .avatar-image {
@@ -41,8 +45,39 @@
         object-fit: cover;
       }
 
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Garamond";
+        font-size: 24px;
+        font-weight: 900;
+      }
+
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+
       .item {
-        background-color: rgba(173, 11, 129, 0.22);
+        background-color: rgba(224, 6, 165, 0.62);
+        margin-bottom: 20px;
+        align-items: center;
+      }
+
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
       }
     </style>
 </head>
@@ -58,19 +93,19 @@
     </div>
 
     <div class="social-icons-row">
-      <a href="https://github.com/kkwon35" target="_blank">
+      <a class="link-text" href="https://github.com/kkwon35" target="_blank">
         GitHub
       </a>
 
-      <a href="https://www.google.com/?client=safari" target="_blank">
+      <a class="link-text" href="https://www.google.com/?client=safari" target="_blank">
         Google
       </a>
 
-      <a href="https://www.accuweather.com/" target="_blank">
+      <a class="link-text" href="https://www.accuweather.com/" target="_blank">
         AccuWeather
       </a>
 
-      <a href="https://www.amazon.com/" target="_blank">
+      <a class="link-text" href="https://www.amazon.com/" target="_blank">
         Amazon
       </a>
     </div>
@@ -79,7 +114,7 @@
       <div class="item">
         <img class="thumbnail" src="/garden.jpg">
 
-        <a target="_blank" href="https://www.bhg.com/gardening/yard/garden-care/gardening-tips-for-every-gardener/">
+        <a class="link-text" target="_blank" href="https://www.bhg.com/gardening/yard/garden-care/gardening-tips-for-every-gardener/">
           25 Gardener Tips Every Gardener Should Know
         </a>
       </div>
@@ -87,7 +122,7 @@
       <div class="item">
         <img class="thumbnail" src="/candy.jpg">
 
-        <a target="_blank" href="https://www.tastingtable.com/1752651/candy-bars-ranked-worst-best/">
+        <a class="link-text" target="_blank" href="https://www.tastingtable.com/1752651/candy-bars-ranked-worst-best/">
           16 Popular Candy Bars, Ranked Worst to Best
         </a>
       </div>
@@ -95,7 +130,7 @@
       <div class="item">
         <img class="thumbnail" src="/breathe.jpg">
 
-        <a target="_blank" href="https://www.healthline.com/health/breathing-exercise">
+        <a class="link-text" target="_blank" href="https://www.healthline.com/health/breathing-exercise">
           10 Breathing Exercises to Try When You're Feeling Stressed
         </a>
       </div>
@@ -103,7 +138,7 @@
       <div class="item">
         <img class="thumbnail" src="/balloon.jpg">
 
-        <a target="_blank" href="https://www.parents.com/where-to-get-helium-balloons-8765336">
+        <a class="link-text" target="_blank" href="https://www.parents.com/where-to-get-helium-balloons-8765336">
           7 Places To Get Party Balloons Now That Party City Is Closing
         </a>
       </div>
@@ -111,7 +146,7 @@
       <div class="item">
         <img class="thumbnail" src="/flower.jpg">
 
-        <a target="_blank" href="https://www.thepioneerwoman.com/home-lifestyle/gardening/g37406360/winter-flowers/">
+        <a class="link-text" target="_blank" href="https://www.thepioneerwoman.com/home-lifestyle/gardening/g37406360/winter-flowers/">
           20 Best Winter Flowers That Will Bloom in the Cold
         </a>
       </div>
@@ -119,7 +154,7 @@
       <div class="item">
         <img class="thumbnail" src="/soup.jpg">
 
-        <a target="_blank" href="https://www.thekitchn.com/collection/soups-stews">
+        <a class="link-text" target="_blank" href="https://www.thekitchn.com/collection/soups-stews">
           Soup and Stew Recipes & Ideas
         </a>
       </div>
